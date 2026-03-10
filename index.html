@@ -1,0 +1,1337 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Advogado Trabalhista para Motoristas e Rodoviários | Horas Extras | Viana Associados</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.webp">
+    <!-- Preload hero image para melhorar LCP -->
+    <link rel="preload" as="image" href="img/hero-bg-rodoviario.png" fetchpriority="high">
+    <link rel="stylesheet" href="cookie-banner.css">
+    <!-- SEO: Canonical e Robots -->
+    <link rel="canonical" href="https://www.vianaadvogado.ag5agencia.site/" />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content="Advogado Trabalhista para Motoristas e Rodoviários | Viana Associados" />
+    <meta property="og:description"
+        content="Especialista em defesa de caminhoneiros e motoristas de ônibus. Horas extras, tempo de espera, periculosidade e doenças ocupacionais. Atendimento no RJ." />
+    <meta property="og:image" content="img/og-image.webp" />
+    <meta property="og:type" content="website" />
+    <meta name="description"
+        content="Escritório especializado em Direito Trabalhista Rodoviário. Defesa de motoristas de carga e passageiros: horas extras, diário de bordo e periculosidade no Rio de Janeiro." />
+    <!-- Security & Social -->
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Roboto:wght@300;400;500;700&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#8B1E22", // Deep Red from logo
+                        secondary: "#D4AF37", // Gold
+                        "background-light": "#F9F7F2", // Beige/Paper
+                        "background-dark": "#1A1A1A", // Dark Gray
+                        "surface-light": "#FFFFFF",
+                        "surface-dark": "#262626",
+                        "text-light": "#2D2D2D",
+                        "text-dark": "#E5E5E5",
+                    },
+                    fontFamily: {
+                        display: ['"Playfair Display"', 'serif'],
+                        body: ['"Roboto"', 'sans-serif'],
+                    },
+                    backgroundImage: {
+                        'hero-pattern': "linear-gradient(rgba(26, 26, 26, 0.85), rgba(139, 30, 34, 0.9)), url('img/hero-bg-rodoviario.png')",
+                    }
+                },
+            },
+        };
+    </script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #8B1E22;
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #661518;
+        }
+
+        .fade-in-up {
+            animation: fadeInUp 0.8s ease-out forwards;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Correção: bg-fixed (parallax) não funciona no iOS/Safari mobile */
+        @media (max-width: 768px) {
+            .bg-fixed {
+                background-attachment: scroll;
+            }
+        }
+
+        /* ========== FOOTER PREMIUM — MODELO A ========== */
+        :root {
+            --color-gold: #D4AF37;
+            --color-bg-dark: #1A1A1A;
+            --color-white: #ffffff;
+            --font-display: 'Playfair Display', serif;
+        }
+
+        .footer {
+            background: var(--color-bg-dark);
+            color: rgba(255, 255, 255, 0.75);
+            position: relative;
+            overflow: hidden;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .footer a {
+            text-decoration: none;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr 1fr 1.2fr;
+            gap: 3rem;
+            padding: 3rem 0 2rem;
+            max-width: 1280px;
+            margin: 0 auto;
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+
+        .footer-brand p {
+            font-size: 0.9rem;
+            line-height: 1.7;
+            margin-top: 1rem;
+            color: rgba(255, 255, 255, 0.65);
+        }
+
+        .footer-logo {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .footer-logo-text {
+            font-family: var(--font-display);
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--color-white);
+        }
+
+        .footer-social {
+            display: flex;
+            gap: 0.75rem;
+            margin-top: 1.25rem;
+        }
+
+        .footer-social-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            color: rgba(255, 255, 255, 0.6);
+            transition: all 0.3s ease;
+        }
+
+        .footer-social-link:hover {
+            background: rgba(212, 175, 55, 0.15);
+            border-color: var(--color-gold);
+            color: var(--color-gold);
+            transform: translateY(-2px);
+        }
+
+        .footer-heading {
+            font-family: var(--font-display);
+            font-size: 1rem;
+            font-weight: 700;
+            color: var(--color-white);
+            margin-bottom: 1.25rem;
+            padding-bottom: 0.75rem;
+            border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+            position: relative;
+        }
+
+        .footer-heading::after {
+            content: '';
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            width: 40px;
+            height: 2px;
+            background: linear-gradient(135deg, #D4AF37, #a68a4a);
+        }
+
+        .footer-links {
+            display: flex;
+            flex-direction: column;
+            gap: 0.6rem;
+        }
+
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.65);
+            font-size: 0.9rem;
+            transition: all 0.2s ease;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .footer-links a::before {
+            content: '›';
+            color: var(--color-gold);
+            font-size: 1.1rem;
+            line-height: 1;
+        }
+
+        .footer-links a:hover {
+            color: var(--color-gold);
+            padding-left: 4px;
+        }
+
+        .footer-contact {
+            display: flex;
+            flex-direction: column;
+            gap: 0.85rem;
+        }
+
+        .footer-contact p {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.6rem;
+            font-size: 0.88rem;
+            color: rgba(255, 255, 255, 0.7);
+            line-height: 1.5;
+            margin: 0;
+        }
+
+        .footer-contact p svg {
+            flex-shrink: 0;
+            margin-top: 2px;
+            color: var(--color-gold);
+            opacity: 0.8;
+        }
+
+        .footer-contact a {
+            color: rgba(255, 255, 255, 0.75);
+            transition: color 0.2s ease;
+        }
+
+        .footer-contact a:hover {
+            color: var(--color-gold);
+        }
+
+        .footer-map iframe {
+            border-radius: 8px;
+            opacity: 0.85;
+            transition: opacity 0.3s ease;
+        }
+
+        .footer-map iframe:hover {
+            opacity: 1;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(212, 175, 55, 0.15);
+            padding: 1rem 0;
+        }
+
+        .footer-bottom-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+            flex-wrap: wrap;
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        .footer-info p,
+        .credits {
+            font-size: 0.82rem;
+            color: rgba(255, 255, 255, 0.5);
+            margin: 0;
+        }
+
+        .credits a {
+            text-decoration: none;
+        }
+
+        @media (max-width: 1024px) {
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 2rem;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+                padding: 2rem 1rem 1.5rem;
+            }
+
+            .footer-bottom-content {
+                flex-direction: column;
+                text-align: center;
+                gap: 0.5rem;
+            }
+        }
+    </style>
+
+    <!-- Schema.org: Unificado (Professional Skill AG5) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "LegalService",
+          "@id": "https://www.vianaadvogado.ag5agencia.site/#negocio",
+          "name": "Viana Advogado & Associados",
+          "legalName": "Viana Advogado & Associados",
+          "url": "https://www.vianaadvogado.ag5agencia.site/",
+          "logo": "https://www.vianaadvogado.ag5agencia.site/img/logo-header.webp",
+          "image": [
+            "https://www.vianaadvogado.ag5agencia.site/img/og-image.webp",
+            "https://www.vianaadvogado.ag5agencia.site/img/hero-bg-rodoviario.png"
+          ],
+          "description": "Escritório especializado em Direito Trabalhista Rodoviário, defesa de motoristas de ônibus e caminhoneiros no Rio de Janeiro.",
+          "telephone": "+5521982662305",
+          "email": "contato@vianaadvogado.com.br",
+          "priceRange": "Consulte-nos",
+          "currenciesAccepted": "BRL",
+          "paymentAccepted": "Dinheiro, Cartão de Crédito, Pix",
+          "foundingDate": "2021-03-01",
+
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "R. Amaral Costa, 508",
+            "addressLocality": "Campo Grande",
+            "addressRegion": "RJ",
+            "postalCode": "23050-260",
+            "addressCountry": "BR"
+          },
+
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "[latitude]",
+            "longitude": "[longitude]"
+          },
+
+          "hasMap": "https://www.google.com/maps/search/?api=1&query=R.+Amaral+Costa,+508+-+Campo+Grande,+Rio+de+Janeiro+-+RJ,+23050-260",
+
+          "openingHoursSpecification": [
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+              "opens": "09:00",
+              "closes": "17:00"
+            }
+          ],
+
+          "areaServed": [
+            { "@type": "City", "name": "Rio de Janeiro", "containedInPlace": { "@type": "State", "name": "RJ" } },
+            { "@type": "Place", "name": "Campo Grande" },
+            { "@type": "Place", "name": "Zona Oeste" },
+            { "@type": "Place", "name": "Senador Vasconcelos" },
+            { "@type": "Place", "name": "Santíssimo" },
+            { "@type": "Place", "name": "Cosmos" },
+            { "@type": "Place", "name": "Inhoaíba" },
+            { "@type": "Place", "name": "Paciência" }
+          ],
+
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Serviços Jurídicos",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Horas Extras e Lei do Motorista",
+                  "description": "Cálculo de jornada, tempo de espera e controle de diário de bordo para rodoviários.",
+                  "provider": { "@id": "https://www.vianaadvogado.ag5agencia.site/#negocio" }
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Adicionais de Periculosidade e Noturno",
+                  "description": "Defesa de direitos para motoristas expostos a riscos e trabalho em jornada noturna.",
+                  "provider": { "@id": "https://www.vianaadvogado.ag5agencia.site/#negocio" }
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Doenças Ocupacionais e Acidentes",
+                  "description": "Indenizações por lesões de coluna, estresse crônico e acidentes de trânsito em serviço.",
+                  "provider": { "@id": "https://www.vianaadvogado.ag5agencia.site/#negocio" }
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Vínculo Empregatício (Falsos Autônomos)",
+                  "description": "Reconhecimento de direitos para motoristas contratados como agregados ou MEI sem autonomia.",
+                  "provider": { "@id": "https://www.vianaadvogado.ag5agencia.site/#negocio" }
+                }
+              }
+            ]
+          },
+
+          "sameAs": [
+            "https://instagram.com/vianaadvogado"
+          ]
+        },
+
+        {
+          "@type": "WebSite",
+          "@id": "https://www.vianaadvogado.ag5agencia.site/#website",
+          "url": "https://www.vianaadvogado.ag5agencia.site/",
+          "name": "Viana Advogado & Associados",
+          "publisher": { "@id": "https://www.vianaadvogado.ag5agencia.site/#negocio" },
+          "inLanguage": "pt-BR"
+        },
+
+        {
+          "@type": "WebPage",
+          "@id": "https://www.vianaadvogado.ag5agencia.site/#webpage",
+          "url": "https://www.vianaadvogado.ag5agencia.site/",
+          "name": "Advogado Trabalhista para Motoristas e Rodoviários | Viana Associados",
+          "description": "Especialista em defesa de caminhoneiros e motoristas de ônibus. Horas extras, tempo de espera, periculosidade e doenças ocupacionais no RJ.",
+          "isPartOf": { "@id": "https://www.vianaadvogado.ag5agencia.site/#website" },
+          "about": { "@id": "https://www.vianaadvogado.ag5agencia.site/#negocio" },
+          "inLanguage": "pt-BR",
+          "datePublished": "2024-01-15",
+          "dateModified": "2026-02-19"
+        },
+
+        {
+          "@type": "FAQPage",
+          "@id": "https://www.vianaadvogado.ag5agencia.site/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Como provar horas extras se não tenho registro de ponto?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Motoristas podem provar a jornada através de diários de bordo, discos de tacógrafo, rastreamento via satélite, mensagens de WhatsApp e depoimentos de colegas." }
+            },
+            {
+              "@type": "Question",
+              "name": "O que é o tempo de espera do motorista?",
+              "acceptedAnswer": { "@type": "Answer", "text": "É o período em que o motorista aguarda carga/descarga ou fiscalização. Deve ser pago como indenização de 30% do salário-hora normal, sem prejuízo das verbas salariais." }
+            },
+            {
+              "@type": "Question",
+              "name": "Motorista agregado tem direito a vínculo de emprego?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Se houver subordinação (cumprir ordens), pessoalidade e hábito (trabalhar sempre para a mesma empresa), o motorista pode exigir o vínculo na justiça, recebendo retroativos." }
+            },
+            {
+              "@type": "Question",
+              "name": "Tenho lesão na coluna pelo tempo de direção. Tenho direitos?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Sim, se comprovado que a lesão foi causada ou agravada pelo trabalho (nexo causal), você pode ter direito a indenização, pensão vitalícia e estabilidade no emprego." }
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+</head>
+
+<body
+    class="font-body bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark transition-colors duration-300">
+    <header
+        class="fixed w-full z-50 bg-surface-light/95 dark:bg-surface-dark/95 backdrop-blur-sm shadow-md border-b border-primary/20 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-24 relative">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="#home" class="flex flex-col items-center justify-center transition hover:opacity-90"
+                        title="Viana Advogado & Associados – Especialista em Direito Trabalhista Rodoviário"
+                        aria-label="Voltar para o topo">
+                        <!-- Novo Ícone Arredondado -->
+                        <img src="img/logo-header.webp" width="64" height="64"
+                            alt="Viana Advogado & Associados – Especialista em Direito Trabalhista Rodoviário"
+                            class="h-14 md:h-16 w-auto object-contain rounded-full shadow-md hover:shadow-lg transition">
+                    </a>
+                </div>
+                <nav class="hidden md:flex space-x-8 items-center">
+                    <a class="text-text-light dark:text-text-dark hover:text-primary dark:hover:text-primary transition font-medium"
+                        href="#home">Início</a>
+                    <a class="text-text-light dark:text-text-dark hover:text-primary dark:hover:text-primary transition font-medium"
+                        href="#areas">Áreas de Atuação</a>
+                    <a class="text-text-light dark:text-text-dark hover:text-primary dark:hover:text-primary transition font-medium"
+                        href="#about">Sobre</a>
+                    <a class="text-text-light dark:text-text-dark hover:text-primary dark:hover:text-primary transition font-medium"
+                        href="#faq">Dúvidas</a>
+                    <a class="text-text-light dark:text-text-dark hover:text-primary dark:hover:text-primary transition font-medium"
+                        href="#contact">Contato</a>
+                </nav>
+                <div class="hidden md:flex items-center">
+                    <a class="bg-primary hover:bg-red-900 text-white px-5 py-2.5 rounded shadow-sm hover:shadow-md transition flex items-center gap-2 font-medium"
+                        href="https://wa.me/5521982662305?text=Olá,%20vim%20pelo%20site%20e%20gostaria%20de%20orientação%20jurídica.">
+                        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                        </svg>
+                        Atendimento WhatsApp
+                    </a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button class="text-gray-600 dark:text-gray-300 hover:text-primary focus:outline-none"
+                        aria-label="Abrir menu de navegação">
+                        <span class="material-icons text-white text-3xl">menu</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="relative pt-24 pb-16 lg:pt-40 lg:pb-32 bg-hero-pattern bg-cover bg-center bg-no-repeat bg-fixed"
+        id="home">
+        <div class="absolute inset-0 bg-black/60"></div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center">
+            <div class="w-full max-w-4xl mx-auto text-center text-white fade-in-up">
+                <div
+                    class="inline-block px-3 py-1 mb-4 border border-secondary/50 rounded-full bg-black/30 backdrop-blur-sm">
+                    <span class="text-secondary text-sm font-semibold uppercase tracking-wider">Advocacia Especializada em
+                        Trabalhista Rodoviário</span>
+                </div>
+                <h1 class="font-display text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-3">
+                    Advogado Especialista em Direito Trabalhista Rodoviário
+                </h1>
+                <p class="text-secondary italic text-2xl md:text-3xl font-display mb-4">Justiça para quem move o Brasil
+                </p>
+                <p class="text-lg md:text-xl text-gray-200 mb-8 max-w-2xl mx-auto font-light">
+                    Defesa técnica para motoristas de carga, passageiros e entregadores. Garantimos seus direitos em horas extras, 
+                    tempo de espera, periculosidade e doenças do trabalho.
+                </p>
+                <ul class="space-y-3 mb-10 text-gray-200">
+                    <li class="flex items-center justify-center gap-3">
+                        <span class="material-icons text-secondary">check_circle</span>
+                        <span>Horas Extras, DSR e Adicional Noturno</span>
+                    </li>
+                    <li class="flex items-center justify-center gap-3">
+                        <span class="material-icons text-secondary">check_circle</span>
+                        <span>Tempo de Espera e Diário de Bordo</span>
+                    </li>
+                    <li class="flex items-center justify-center gap-3">
+                        <span class="material-icons text-secondary">check_circle</span>
+                        <span>Periculosidade e Doenças Ocupacionais</span>
+                    </li>
+                </ul>
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <a class="bg-secondary text-primary-900 font-bold px-8 py-3.5 rounded hover:bg-yellow-500 transition shadow-lg text-center flex items-center justify-center gap-2"
+                        href="https://wa.me/5521982662305?text=Olá,%20vim%20pelo%20site%20e%20gostaria%20de%20falar%20com%20a%20equipe.">
+                        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                        </svg>
+                        Fale com nossa equipe
+                    </a>
+                    <a class="bg-transparent border-2 border-white text-white font-medium px-8 py-3.5 rounded hover:bg-white hover:text-primary transition text-center"
+                        href="#contact">
+                        Agendar orientação
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-20 bg-background-light dark:bg-background-dark" id="areas">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-display text-3xl md:text-4xl font-bold text-primary mb-4">Especialidades Rodoviárias</h2>
+                <div class="w-24 h-1 bg-secondary mx-auto"></div>
+                <p class="mt-4 text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+                    Dominamos a legislação específica do transporte (Lei 13.103/2015) para garantir que motoristas 
+                    em <strong>todo o Rio de Janeiro</strong> recebam cada centavo que lhes é de direito.
+                </p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Card 1: INSS - LOAS - APOSENTADORIA -->
+                <div
+                    class="bg-surface-light dark:bg-surface-dark p-8 rounded shadow-lg border-t-4 border-secondary hover:-translate-y-2 transition duration-300 group">
+                    <div
+                        class="w-14 h-14 bg-secondary/10 rounded-full flex items-center justify-center mb-6 group-hover:bg-secondary transition">
+                        <span
+                            class="material-icons text-secondary text-3xl group-hover:text-white transition">timer</span>
+                    </div>
+                    <h3 class="font-display text-xl font-bold mb-3 text-text-light dark:text-text-dark">Horas Extras e Lei do Motorista</h3>
+                    <p class="text-gray-600 dark:text-gray-400 leading-relaxed">
+                        Cálculo rigoroso de jornada 12x36 ou convencional, excesso de direção, supressão de intervalo 
+                        intra jornada e inter jornadas, além do correto pagamento do DSR.
+                    </p>
+                </div>
+
+                <!-- Card 2: PENSÃO - AUXÍLIO DOENÇA -->
+                <div
+                    class="bg-surface-light dark:bg-surface-dark p-8 rounded shadow-lg border-t-4 border-primary hover:-translate-y-2 transition duration-300 group">
+                    <div
+                        class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-6 group-hover:bg-primary transition">
+                        <span
+                            class="material-icons text-primary text-3xl group-hover:text-white transition">local_shipping</span>
+                    </div>
+                    <h3 class="font-display text-xl font-bold mb-3 text-text-light dark:text-text-dark">Pernoite e Espera</h3>
+                    <p class="text-gray-600 dark:text-gray-400 leading-relaxed">
+                        Recuperação de valores referentes ao Tempo de Espera (indenização de 30%), adicional de pernoite 
+                        em cabine e reembolso de despesas de alimentação e estadia não pagas.
+                    </p>
+                </div>
+
+                <!-- Card 3: AUXÍLIO ACIDENTE - TRABALHISTA -->
+                <div
+                    class="bg-surface-light dark:bg-surface-dark p-8 rounded shadow-lg border-t-4 border-primary hover:-translate-y-2 transition duration-300 group">
+                    <div
+                        class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-6 group-hover:bg-primary transition">
+                        <span
+                            class="material-icons text-primary text-3xl group-hover:text-white transition">warning</span>
+                    </div>
+                    <h3 class="font-display text-xl font-bold mb-3 text-text-light dark:text-text-dark">Periculosidade e Risco</h3>
+                    <p class="text-gray-600 dark:text-gray-400 leading-relaxed">
+                        Garantia do adicional de periculosidade para motoristas de tanques de combustível, inflamáveis 
+                        e cargas explosivas, além de insalubridade por ruído e vibração excessiva.
+                    </p>
+                </div>
+
+                <!-- Card 4: CÍVEL E DEFESA DO CONSUMIDOR -->
+                <div
+                    class="bg-surface-light dark:bg-surface-dark p-8 rounded shadow-lg border-t-4 border-secondary hover:-translate-y-2 transition duration-300 group">
+                    <div
+                        class="w-14 h-14 bg-secondary/10 rounded-full flex items-center justify-center mb-6 group-hover:bg-secondary transition">
+                        <span
+                            class="material-icons text-secondary text-3xl group-hover:text-white transition">badge</span>
+                    </div>
+                    <h3 class="font-display text-xl font-bold mb-3 text-text-light dark:text-text-dark">Vínculo de Emprego</h3>
+                    <p class="text-gray-600 dark:text-gray-400 leading-relaxed">
+                        Reconhecimento de vínculo para motoristas agregados (falsos autônomos), garantia de assinatura 
+                        em carteira, FGTS, férias e todas as verbas rescisórias devidas.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-20 bg-white dark:bg-surface-dark relative overflow-hidden" id="about">
+        <div class="absolute right-0 top-0 w-1/3 h-full bg-gray-50 dark:bg-black/20 skew-x-12 hidden lg:block"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="font-display text-3xl md:text-4xl font-bold text-primary mb-6">Sobre o Escritório</h2>
+                    <p class="text-lg text-gray-700 dark:text-gray-300 mb-6 font-medium">
+                        Especialistas na defesa de quem vive na estrada. O Viana Advogado &amp; Associados
+                        é referência em Direito Trabalhista focado em motoristas e rodoviários.
+                    </p>
+                    <p class="text-gray-600 dark:text-gray-400 mb-6 leading-relaxed">
+                        Entendemos a realidade das estradas e as particularidades da <span
+                            class="text-primary font-semibold">Lei do Motorista</span>. Atuamos em todo o Rio de Janeiro
+                        defendendo o caminhoneiro e o motorista de ônibus contra jornadas abusivas e descumprimento de direitos fundamentais.
+                    </p>
+                    <div class="grid grid-cols-2 gap-6 mt-8">
+                        <div class="flex flex-col border-l-2 border-secondary pl-4">
+                            <span class="text-3xl font-bold text-primary font-display">Disciplina</span>
+                            <span class="text-sm text-gray-500 dark:text-gray-400">Rigor técnico em cada processo</span>
+                        </div>
+                        <div class="flex flex-col border-l-2 border-secondary pl-4">
+                            <span class="text-3xl font-bold text-primary font-display">Ética</span>
+                            <span class="text-sm text-gray-500 dark:text-gray-400">Transparência total com o
+                                cliente</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <img alt="Estátua da Justiça em ambiente de escritório de advocacia"
+                        class="rounded shadow-2xl w-full object-cover h-[500px]" width="600" height="500" loading="lazy"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEHmzh9gKXf06Iogj_Wgojnscxhm6tyEMQsTeRoueFm2VjwmYia6VrptaDJZUXYqR0BRt8LcAgjTXpD5Th9grK01cohB1IhTVPfw7ISErieRwXA5IoBl20uIXnnYK8JvZWtN4Sm3cqi4Q4UlIsMwPbOEjUIlupSblikxhOChsMd4fAeSZpVbh-6IIq4NSqZ_dzz7D5atHd5uQMF0ZAfYxh2H4vEs0m1TDyieGKOMKoTRFcDzha7x2Cw-NOvF8cS_B609pkXSt8Yqs" />
+                    <div class="absolute -bottom-6 -left-6 bg-primary p-6 rounded shadow-xl hidden md:block">
+                        <p class="text-secondary font-display text-4xl font-bold">5</p>
+                        <p class="text-white text-sm uppercase tracking-wide">Anos de<br />Experiência</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-20 bg-primary text-white relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h3 class="font-display text-3xl md:text-4xl font-bold text-white mb-4">Como Funciona o Atendimento</h3>
+                <p class="text-white/80 max-w-2xl mx-auto">Passo a passo simplificado para defender seus direitos.</p>
+            </div>
+            <div class="relative">
+                <div class="hidden md:block absolute top-1/2 left-0 w-full h-0.5 bg-white/20 -translate-y-1/2"></div>
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-8 relative z-10">
+                    <div
+                        class="bg-primary border border-white/20 p-6 rounded-lg text-center hover:bg-white/10 transition duration-300">
+                        <div
+                            class="w-12 h-12 bg-secondary text-primary font-bold text-xl rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+                            1</div>
+                        <h5 class="text-xl font-display font-semibold mb-2">Contato Inicial</h5>
+                        <p class="text-sm text-white/80">Agende sua orientação via WhatsApp ou formulário.</p>
+                    </div>
+                    <div
+                        class="bg-primary border border-white/20 p-6 rounded-lg text-center hover:bg-white/10 transition duration-300">
+                        <div
+                            class="w-12 h-12 bg-secondary text-primary font-bold text-xl rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+                            2</div>
+                        <h5 class="text-xl font-display font-semibold mb-2">Análise do Caso</h5>
+                        <p class="text-sm text-white/80">Nossa equipe estuda a viabilidade jurídica do seu pedido.</p>
+                    </div>
+                    <div
+                        class="bg-primary border border-white/20 p-6 rounded-lg text-center hover:bg-white/10 transition duration-300">
+                        <div
+                            class="w-12 h-12 bg-secondary text-primary font-bold text-xl rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+                            3</div>
+                        <h5 class="text-xl font-display font-semibold mb-2">Estratégia</h5>
+                        <p class="text-sm text-white/80">Definição da melhor abordagem legal para sua situação.</p>
+                    </div>
+                    <div
+                        class="bg-primary border border-white/20 p-6 rounded-lg text-center hover:bg-white/10 transition duration-300">
+                        <div
+                            class="w-12 h-12 bg-secondary text-primary font-bold text-xl rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+                            4</div>
+                        <h5 class="text-xl font-display font-semibold mb-2">Ação Legal</h5>
+                        <p class="text-sm text-white/80">Início do processo ou negociação extrajudicial.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-20 bg-background-light dark:bg-background-dark" id="faq">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-display text-3xl md:text-4xl font-bold text-primary mb-4">Dúvidas dos Motoristas</h2>
+                <p class="text-gray-600 dark:text-gray-400">Principais dúvidas sobre horas extras, diário de bordo e tempo de espera — respondidas pelo nosso time jurídico.
+                </p>
+            </div>
+            <div class="space-y-4">
+                <details class="group bg-surface-light dark:bg-surface-dark rounded-lg shadow-sm">
+                    <summary
+                        class="flex justify-between items-center font-medium cursor-pointer list-none p-6 text-lg text-text-light dark:text-text-dark">
+                        <span>Como provar horas extras no caminhão ou ônibus?</span>
+                        <span class="transition group-open:rotate-180">
+                            <span class="material-icons text-primary">expand_more</span>
+                        </span>
+                    </summary>
+                    <div
+                        class="text-gray-600 dark:text-gray-400 mt-0 px-6 pb-6 leading-relaxed border-t border-gray-100 dark:border-gray-700 pt-4">
+                        A prova pode ser feita através do **diário de bordo**, discos de tacógrafo, rastreadores via satélite, mensagens de WhatsApp com a supervisão e depoimento de testemunhas. Mesmo sem cartão de ponto, a empresa é obrigada a controlar a jornada.
+                    </div>
+                </details>
+                <details class="group bg-surface-light dark:bg-surface-dark rounded-lg shadow-sm">
+                    <summary
+                        class="flex justify-between items-center font-medium cursor-pointer list-none p-6 text-lg text-text-light dark:text-text-dark">
+                        <span>O que é tempo de espera e como deve ser pago?</span>
+                        <span class="transition group-open:rotate-180">
+                            <span class="material-icons text-primary">expand_more</span>
+                        </span>
+                    </summary>
+                    <div
+                        class="text-gray-600 dark:text-gray-400 mt-0 px-6 pb-6 leading-relaxed border-t border-gray-100 dark:border-gray-700 pt-4">
+                        Tempo de espera é o período em que o motorista aguarda carga, descarga ou fiscalização. Segundo a lei, deve ser pago com base no salário-hora normal acrescido de 30% como indenização, e não pode ser confundido com descanso.
+                    </div>
+                </details>
+                <details class="group bg-surface-light dark:bg-surface-dark rounded-lg shadow-sm">
+                    <summary
+                        class="flex justify-between items-center font-medium cursor-pointer list-none p-6 text-lg text-text-light dark:text-text-dark">
+                        <span>Motorista agregado (ME) tem direito a vínculo de emprego?</span>
+                        <span class="transition group-open:rotate-180">
+                            <span class="material-icons text-primary">expand_more</span>
+                        </span>
+                    </summary>
+                    <div
+                        class="text-gray-600 dark:text-gray-400 mt-0 px-6 pb-6 leading-relaxed border-t border-gray-100 dark:border-gray-700 pt-4">
+                        Sim, caso fique provado que você não tinha autonomia real, sofria subordinação direta da transportadora e trabalhava com exclusividade e habitualidade. Nesses casos, a justiça anula o contrato de 'autônomo' e garante todos os direitos da CLT.
+                    </div>
+                </details>
+                <details class="group bg-surface-light dark:bg-surface-dark rounded-lg shadow-sm">
+                    <summary
+                        class="flex justify-between items-center font-medium cursor-pointer list-none p-6 text-lg text-text-light dark:text-text-dark">
+                        <span>Tenho direito a periculosidade por dirigir caminhão-tanque?</span>
+                        <span class="transition group-open:rotate-180">
+                            <span class="material-icons text-primary">expand_more</span>
+                        </span>
+                    </summary>
+                    <div
+                        class="text-gray-600 dark:text-gray-400 mt-0 px-6 pb-6 leading-relaxed border-t border-gray-100 dark:border-gray-700 pt-4">
+                        Sim. Motoristas que transportam inflamáveis em quantidades superiores a 200 litros (mesmo em tanques extras de consumo) têm direito ao adicional de 30% de periculosidade sobre o salário base.
+                    </div>
+                </details>
+                <!-- Pergunta 5 reformulada: alta intenção de busca -->
+                <details class="group bg-surface-light dark:bg-surface-dark rounded-lg shadow-sm">
+                    <summary
+                        class="flex justify-between items-center font-medium cursor-pointer list-none p-6 text-lg text-text-light dark:text-text-dark">
+                        <span>O que acontece se eu me acidentar na estrada?</span>
+                        <span class="transition group-open:rotate-180">
+                            <span class="material-icons text-primary">expand_more</span>
+                        </span>
+                    </summary>
+                    <div
+                        class="text-gray-600 dark:text-gray-400 mt-0 px-6 pb-6 leading-relaxed border-t border-gray-100 dark:border-gray-700 pt-4">
+                        Você tem direito ao auxílio-doença acidentário, estabilidade de 12 meses e, dependendo do caso, indenização por danos morais e lucros cessantes se a empresa negligenciou a manutenção do veículo ou descanso obrigatório.
+                    </div>
+                </details>
+                <details class="group bg-surface-light dark:bg-surface-dark rounded-lg shadow-sm">
+                    <summary
+                        class="flex justify-between items-center font-medium cursor-pointer list-none p-6 text-lg text-text-light dark:text-text-dark">
+                        <span>Tenho dor na coluna por tempo de direção. Isso é doença ocupacional?</span>
+                        <span class="transition group-open:rotate-180">
+                            <span class="material-icons text-primary">expand_more</span>
+                        </span>
+                    </summary>
+                    <div
+                        class="text-gray-600 dark:text-gray-400 mt-0 px-6 pb-6 leading-relaxed border-t border-gray-100 dark:border-gray-700 pt-4">
+                        Sim. Problemas de coluna (hérnias, bicos de papagaio) causados pela vibração do veículo e má postura prolongada são considerados doenças ocupacionais, dando direito a indenização e suporte previdenciário.
+                    </div>
+                </details>
+
+                <!-- Perguntas novas de alto volume de busca conversacional -->
+                <details class="group bg-surface-light dark:bg-surface-dark rounded-lg shadow-sm">
+                    <summary
+                        class="flex justify-between items-center font-medium cursor-pointer list-none p-6 text-lg text-text-light dark:text-text-dark">
+                        <span>O que acontece se a empresa não pagar o Adicional Noturno?</span>
+                        <span class="transition group-open:rotate-180">
+                            <span class="material-icons text-primary">expand_more</span>
+                        </span>
+                    </summary>
+                    <div
+                        class="text-gray-600 dark:text-gray-400 mt-0 px-6 pb-6 leading-relaxed border-t border-gray-100 dark:border-gray-700 pt-4">
+                        Você pode cobrar judicialmente os retroativos dos últimos 5 anos com juros e correção, além da 
+                        incidência desse adicional no cálculo de horas extras, férias, 13º e FGTS.
+                    </div>
+                </details>
+
+                <details class="group bg-surface-light dark:bg-surface-dark rounded-lg shadow-sm">
+                    <summary
+                        class="flex justify-between items-center font-medium cursor-pointer list-none p-6 text-lg text-text-light dark:text-text-dark">
+                        <span>Quanto tempo demora um processo trabalhista rodoviário?</span>
+                        <span class="transition group-open:rotate-180">
+                            <span class="material-icons text-primary">expand_more</span>
+                        </span>
+                    </summary>
+                    <div
+                        class="text-gray-600 dark:text-gray-400 mt-0 px-6 pb-6 leading-relaxed border-t border-gray-100 dark:border-gray-700 pt-4">
+                        O tempo varia, mas geralmente entre 1 a 2 anos para uma decisão final nas varas do Rio de Janeiro. Muitos casos, porém, resolvem-se em acordos já na primeira audiência.
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+    <section class="py-12 bg-gray-100 dark:bg-[#1f1f1f]" id="contact">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div
+                class="bg-surface-light dark:bg-surface-dark rounded-xl shadow-2xl overflow-hidden flex flex-col md:flex-row">
+                <div class="p-8 md:p-12 w-full md:w-3/5">
+                    <h3 class="font-display text-3xl font-bold text-primary mb-2">Fale Conosco</h3>
+                    <p class="text-gray-600 dark:text-gray-400 mb-8">Preencha o formulário abaixo e entraremos em
+                        contato o mais breve possível.</p>
+                    <form action="#" class="space-y-6" method="POST">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 dark:text-gray-300" for="name">Nome
+                                Completo</label>
+                            <input
+                                class="mt-1 block w-full rounded-md border-gray-300 dark:border-gray-600 dark:bg-background-dark dark:text-white shadow-sm focus:border-primary focus:ring focus:ring-primary/20 transition"
+                                id="name" name="name" placeholder="Seu nome" type="text" />
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 dark:text-gray-300"
+                                for="whatsapp">WhatsApp</label>
+                            <input
+                                class="mt-1 block w-full rounded-md border-gray-300 dark:border-gray-600 dark:bg-background-dark dark:text-white shadow-sm focus:border-primary focus:ring focus:ring-primary/20 transition"
+                                id="whatsapp" name="whatsapp" placeholder="(21) 99999-9999" type="tel" />
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 dark:text-gray-300"
+                                for="subject">Assunto</label>
+                            <select
+                                class="mt-1 block w-full rounded-md border-gray-300 dark:border-gray-600 dark:bg-background-dark dark:text-white shadow-sm focus:border-primary focus:ring focus:ring-primary/20 transition"
+                                id="subject" name="subject">
+                                <option>Horas Extras / Lei do Motorista</option>
+                                <option>Tempo de Espera / Pernoite</option>
+                                <option>Periculosidade / Insalubridade</option>
+                                <option>Vínculo Empregatício / Rescisão</option>
+                                <option>Acidente / Doença Ocupacional</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 dark:text-gray-300"
+                                for="message">Mensagem</label>
+                            <textarea
+                                class="mt-1 block w-full rounded-md border-gray-300 dark:border-gray-600 dark:bg-background-dark dark:text-white shadow-sm focus:border-primary focus:ring focus:ring-primary/20 transition"
+                                id="message" name="message" placeholder="Descreva brevemente seu caso..."
+                                rows="4"></textarea>
+                        </div>
+                        <button
+                            class="w-full bg-primary text-white font-bold py-3.5 px-4 rounded hover:bg-red-900 transition focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary"
+                            type="submit">
+                            Enviar Mensagem
+                        </button>
+                        <p class="text-xs text-gray-500 text-center mt-4">
+                            Seus dados estão protegidos. Não garantimos resultado de causa, cada caso é analisado
+                            individualmente conforme o código de ética da OAB.
+                        </p>
+                    </form>
+                </div>
+                <div
+                    class="bg-primary p-8 md:p-12 w-full md:w-2/5 text-white flex flex-col justify-center relative overflow-hidden">
+                    <div class="absolute top-0 right-0 -mr-16 -mt-16 w-64 h-64 rounded-full bg-white/5"></div>
+                    <div class="absolute bottom-0 left-0 -ml-16 -mb-16 w-40 h-40 rounded-full bg-white/5"></div>
+                    <h4 class="font-display text-2xl font-bold mb-8 relative z-10">Informações de Contato</h4>
+                    <div class="space-y-8 relative z-10">
+                        <div class="flex items-start gap-4">
+                            <span class="material-icons text-secondary mt-1">location_on</span>
+                            <div>
+                                <p class="font-semibold text-secondary">Endereço</p>
+                                <p class="text-white/90">R. Amaral Costa, 508 - Campo Grande<br />Rio de Janeiro - RJ,
+                                    23050-260</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <span class="material-icons text-secondary mt-1">phone</span>
+                            <div>
+                                <p class="font-semibold text-secondary">Telefones</p>
+                                <p class="text-white/90">(21) 98266-2305</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <span class="material-icons text-secondary mt-1">schedule</span>
+                            <div>
+                                <p class="font-semibold text-secondary">Horário de Atendimento</p>
+                                <p class="text-white/90">Segunda a Sexta<br />09h às 17h</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <!-- Elemento decorativo de fundo (opcional) -->
+        <!-- <div class="footer-bg-decor" aria-hidden="true"></div> -->
+
+        <div class="footer-grid">
+
+            <!-- COLUNA 1: Marca + Redes Sociais -->
+            <div class="footer-brand">
+                <a href="#home" class="footer-logo block mb-4 transition hover:opacity-80"
+                    aria-label="Voltar para o topo">
+                    <img src="img/logo.webp" alt="Viana Advogado & Associados – Especialista em Direito Trabalhista Rodoviário"
+                        class="h-24 w-auto object-contain">
+                </a>
+                <p>Especialistas na defesa dos direitos dos motoristas e rodoviários. Atuação ética, transparente
+                    e combativa no Rio de Janeiro.</p>
+
+                <div class="footer-social" aria-label="Redes sociais">
+                    <!-- Instagram -->
+                    <a href="https://instagram.com/vianaadvogado" target="_blank" rel="noopener noreferrer"
+                        aria-label="Instagram de Viana Advogado & Associados – Especialista em Direito Trabalhista Rodoviário"
+                        class="footer-social-link">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5" stroke="currentColor"
+                                stroke-width="2" />
+                            <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2" />
+                            <circle cx="17.5" cy="6.5" r="1" fill="currentColor" />
+                        </svg>
+                    </a>
+                    <!-- WhatsApp -->
+                    <a href="https://wa.me/5521982662305?text=Olá,%20vim%20pelo%20site%20e%20gostaria%20de%20contato."
+                        target="_blank" rel="noopener noreferrer"
+                        aria-label="WhatsApp de Viana Advogado & Associados – Especialista em Direito Trabalhista Rodoviário"
+                        class="footer-social-link">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path
+                                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- COLUNA 2: Links Rápidos -->
+            <div class="footer-column">
+                <h3 class="footer-heading">Links Rápidos</h3>
+                <div class="footer-links">
+                    <a href="#home">Início</a>
+                    <a href="#areas">Áreas de Atuação</a>
+                    <a href="#about">Sobre o Escritório</a>
+                    <a href="#faq">Dúvidas Frequentes</a>
+                    <a href="#contact">Agendar Consulta</a>
+                </div>
+            </div>
+
+            <!-- COLUNA 3: Contatos -->
+            <div class="footer-column">
+                <h3 class="footer-heading">Contatos</h3>
+                <div class="footer-contact">
+
+                    <!-- 1º: Nome da empresa -->
+                    <p>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                            <path d="M3 21h18M3 10l9-7 9 7v11H3V10z" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M9 21V12h6v9" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                        <strong style="color: var(--color-gold);">Viana Advogado & Associados – Especialista em Direito Trabalhista Rodoviário</strong>
+                    </p>
+
+                    <!-- 2º: Endereço -->
+                    <p>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" stroke="currentColor"
+                                stroke-width="2" />
+                            <circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="2" />
+                        </svg>
+                        <a href="https://www.google.com/maps/search/?api=1&query=R.+Amaral+Costa,+508+-+Campo+Grande,+Rio+de+Janeiro+-+RJ,+23050-260"
+                            target="_blank" rel="noopener noreferrer" aria-label="Ver rota para Viana Advogado">
+                            R. Amaral Costa, 508 - Campo Grande<br>Rio de Janeiro - RJ, 23050-260
+                        </a>
+                    </p>
+
+                    <!-- 3º: Celular PRIMEIRO -->
+                    <p>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                            <path
+                                d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.362 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0122 16.92z"
+                                stroke="currentColor" stroke-width="2" />
+                        </svg>
+                        <a href="tel:+5521982662305">(21) 98266-2305</a>
+                    </p>
+
+
+
+
+                </div>
+            </div>
+
+            <!-- COLUNA 4: Atendimento + Mapa -->
+            <div class="footer-column">
+                <h3 class="footer-heading">Atendimento</h3>
+
+                <div class="footer-map" style="margin-bottom: 5px;">
+                    <iframe
+                        src="https://maps.google.com/maps?q=R.+Amaral+Costa,+508+-+Campo+Grande,+Rio+de+Janeiro+-+RJ,+23050-260&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                        width="100%" height="120" style="border:0; border-radius: 8px;" allowfullscreen=""
+                        loading="lazy" title="Mapa de localização de Viana Advogado"
+                        aria-label="Localização de Viana Advogado no mapa" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+
+                <p
+                    style="display: flex; align-items: center; gap: 8px; color: rgba(255,255,255,0.8); font-size: 0.85rem; margin-bottom: 6px;">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        style="color: var(--color-gold); flex-shrink: 0;">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <polyline points="12 6 12 12 16 14"></polyline>
+                    </svg>
+                    Segunda a Sexta 09h às 17h
+                </p>
+
+                <p style="color: rgba(255,255,255,0.6); font-size: 0.85rem;">
+                    <strong style="color: var(--color-gold);">Locais:</strong> Rio de Janeiro (Capital), Baixada,
+                    Niterói, Zona Oeste e Norte.
+                </p>
+            </div>
+
+        </div>
+
+        <!-- ========== BOTTOM BAR ========== -->
+        <div class="footer-bottom">
+            <div class="footer-bottom-content">
+                <div class="footer-info">
+                    <p>© <span id="current-year">2026</span> Viana Advogado & Associados. Todos os direitos reservados.
+                    </p>
+                    <div class="footer-legal-links" style="margin-top: 6px; font-size: 11px; opacity: 0.7;">
+                        <a href="termos-e-condicoes.html" style="text-decoration: none; color: inherit;">Termos e
+                            Condições</a>
+                        <span style="margin: 0 8px;">|</span>
+                        <a href="politica-de-privacidade.html" style="text-decoration: none; color: inherit;">Política
+                            de Privacidade</a>
+                    </div>
+                </div>
+                <p class="credits">Desenvolvido por
+                    <a href="https://www.ag5agencia.com.br/" target="_blank" rel="noopener noreferrer"
+                        style="color: #c9a962; font-weight: 600;">AG5
+                        Agência</a>
+                </p>
+            </div>
+        </div>
+
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/5521982662305?text=Olá,%20vim%20pelo%20site%20e%20gostaria%20de%20atendimento."
+        target="_blank"
+        class="fixed bottom-6 right-6 z-50 bg-[#25D366] hover:bg-[#128C7E] text-white p-3.5 rounded-full shadow-lg transition-transform hover:scale-110 flex items-center justify-center group"
+        aria-label="Fale conosco no WhatsApp">
+        <span
+            class="absolute -top-1 -right-1 bg-red-600 text-white text-xs font-bold w-5 h-5 rounded-full flex items-center justify-center border-2 border-white animate-bounce shadow-sm">1</span>
+        <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+        </svg>
+    </a>
+
+    <script>
+        // Smart Header & Smooth Scroll Logic
+        document.addEventListener('DOMContentLoaded', () => {
+            // Smart Header
+            const header = document.querySelector('header');
+            let lastScrollTop = 0;
+            const scrollThreshold = 100;
+
+            window.addEventListener('scroll', () => {
+                let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+                if (scrollTop > lastScrollTop && scrollTop > scrollThreshold) {
+                    header.style.transform = 'translateY(-100%)';
+                } else {
+                    header.style.transform = 'translateY(0)';
+                }
+                lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+            }, { passive: true });
+
+            // Menu Mobile
+            const menuBtn = document.querySelector('.md\\:hidden button');
+            const mobileNav = document.querySelector('header nav');
+            if (menuBtn && mobileNav) {
+                menuBtn.addEventListener('click', () => {
+                    mobileNav.classList.toggle('hidden');
+                    mobileNav.classList.toggle('flex');
+                    mobileNav.classList.toggle('flex-col');
+                    mobileNav.classList.toggle('absolute');
+                    mobileNav.classList.toggle('top-24');
+                    mobileNav.classList.toggle('left-0');
+                    mobileNav.classList.toggle('right-0');
+                    mobileNav.classList.toggle('bg-white');
+                    mobileNav.classList.toggle('dark:bg-surface-dark');
+                    mobileNav.classList.toggle('shadow-lg');
+                    mobileNav.classList.toggle('p-6');
+                    mobileNav.classList.toggle('space-x-0');
+                    mobileNav.classList.toggle('space-y-4');
+                    mobileNav.classList.toggle('z-40');
+                });
+
+                // NOVO: Fecha menu mobile ao clicar em link
+                const mobileLinks = mobileNav.querySelectorAll('a');
+                mobileLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        if (!mobileNav.classList.contains('hidden')) {
+                            mobileNav.classList.add('hidden');
+                            mobileNav.classList.remove('flex', 'flex-col', 'absolute', 'top-24', 'left-0', 'right-0', 'bg-white', 'dark:bg-surface-dark', 'shadow-lg', 'p-6', 'space-x-0', 'space-y-4', 'z-40');
+                        }
+                    });
+                });
+            }
+
+            // Formulário de contato com feedback
+            const contactForm = document.querySelector('#contact form');
+            if (contactForm) {
+                contactForm.addEventListener('submit', async (e) => {
+                    e.preventDefault();
+                    const btn = contactForm.querySelector('button[type="submit"]');
+                    btn.textContent = 'Enviando...';
+                    btn.disabled = true;
+                    // Simula envio (conecte ao Formspree trocando action)
+                    await new Promise(r => setTimeout(r, 1000));
+                    contactForm.innerHTML = `
+                        <div class="text-center py-8">
+                            <span class="material-icons text-5xl text-green-500">check_circle</span>
+                            <h3 class="font-display text-xl font-bold text-primary mt-4">Mensagem enviada!</h3>
+                            <p class="text-gray-600 dark:text-gray-400 mt-2">Entraremos em contato em breve pelo WhatsApp ou e-mail informado.</p>
+                            <a href="https://wa.me/5521982662305?text=Olá,%20vim%20pelo%20site%20e%20acabei%20de%20enviar%20uma%20mensagem%20pelo%20formulário." class="inline-block mt-6 bg-primary text-white font-bold py-3 px-6 rounded hover:bg-red-900 transition">
+                                Falar agora pelo WhatsApp
+                            </a>
+                        </div>
+                    `;
+                });
+            }
+        });
+    </script>
+
+    <!-- ========== BANNER DE ACEITE ========== -->
+    <div id="ck-banner" class="ck-banner" role="dialog" aria-modal="true" aria-label="Aviso de cookies"
+        aria-live="polite" aria-hidden="true">
+        <div class="ck-banner__inner">
+            <div class="ck-banner__content">
+                <h2 class="ck-banner__title">Valorizamos sua privacidade</h2>
+                <p class="ck-banner__text">
+                    Utilizamos cookies para aprimorar sua experiência de navegação, exibir conteúdo
+                    personalizado e analisar nosso tráfego. Ao clicar em <strong>"Aceitar todos"</strong>,
+                    você concorda com nosso uso de cookies conforme nossa
+                    <a href="politica-de-privacidade.html" class="ck-banner__link">Política de Privacidade</a>.
+                </p>
+            </div>
+            <div class="ck-banner__actions">
+                <button id="ck-customize" class="ck-btn ck-btn--ghost">Personalizar</button>
+                <button id="ck-reject" class="ck-btn ck-btn--outline">Rejeitar</button>
+                <button id="ck-accept-all" class="ck-btn ck-btn--primary">Aceitar todos</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========== MODAL DE PERSONALIZAÇÃO ========== -->
+    <div id="ck-modal" class="ck-modal" role="dialog" aria-modal="true"
+        aria-label="Personalizar preferências de cookies" aria-hidden="true">
+        <div class="ck-modal__overlay" id="ck-modal-overlay"></div>
+        <div class="ck-modal__box">
+
+            <div class="ck-modal__header">
+                <h2 class="ck-modal__title">Personalizar preferências de consentimento</h2>
+                <button class="ck-modal__close" id="ck-modal-close" aria-label="Fechar modal">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                        <path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+            </div>
+
+            <div class="ck-modal__body">
+                <p class="ck-modal__intro">
+                    Utilizamos cookies para ajudar você a navegar com eficiência e executar certas funções.
+                    Os cookies classificados como <strong>"Necessário"</strong> são essenciais para o
+                    funcionamento básico do site e não podem ser desativados.
+                </p>
+
+                <!-- Categoria: Necessário (sempre ativo) -->
+                <div class="ck-category">
+                    <div class="ck-category__header">
+                        <div class="ck-category__info">
+                            <h3 class="ck-category__name">Necessário</h3>
+                            <p class="ck-category__desc">
+                                Essenciais para o funcionamento do site. Não armazenam dados pessoalmente
+                                identificáveis.
+                            </p>
+                        </div>
+                        <span class="ck-category__badge">Sempre ativo</span>
+                    </div>
+                </div>
+
+                <!-- Categoria: Funcional -->
+                <div class="ck-category">
+                    <div class="ck-category__header">
+                        <div class="ck-category__info">
+                            <h3 class="ck-category__name">Funcional</h3>
+                            <p class="ck-category__desc">
+                                Ajudam a executar funcionalidades como compartilhamento em mídia social e recursos de
+                                terceiros.
+                            </p>
+                        </div>
+                        <label class="ck-toggle" aria-label="Ativar cookies funcionais">
+                            <input type="checkbox" id="ck-functional" name="functional">
+                            <span class="ck-toggle__slider"></span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Categoria: Analítico -->
+                <div class="ck-category">
+                    <div class="ck-category__header">
+                        <div class="ck-category__info">
+                            <h3 class="ck-category__name">Analítico</h3>
+                            <p class="ck-category__desc">
+                                Usados para entender como os visitantes interagem com o site (visitantes, taxa de
+                                rejeição,
+                                etc.).
+                            </p>
+                        </div>
+                        <label class="ck-toggle" aria-label="Ativar cookies analíticos">
+                            <input type="checkbox" id="ck-analytics" name="analytics">
+                            <span class="ck-toggle__slider"></span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Categoria: Desempenho -->
+                <div class="ck-category">
+                    <div class="ck-category__header">
+                        <div class="ck-category__info">
+                            <h3 class="ck-category__name">Desempenho</h3>
+                            <p class="ck-category__desc">
+                                Analisam índices de desempenho do site para oferecer melhor experiência ao visitante.
+                            </p>
+                        </div>
+                        <label class="ck-toggle" aria-label="Ativar cookies de desempenho">
+                            <input type="checkbox" id="ck-performance" name="performance">
+                            <span class="ck-toggle__slider"></span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Categoria: Publicidade -->
+                <div class="ck-category">
+                    <div class="ck-category__header">
+                        <div class="ck-category__info">
+                            <h3 class="ck-category__name">Publicidade</h3>
+                            <p class="ck-category__desc">
+                                Entregam anúncios personalizados com base nas páginas visitadas anteriormente.
+                            </p>
+                        </div>
+                        <label class="ck-toggle" aria-label="Ativar cookies de publicidade">
+                            <input type="checkbox" id="ck-advertising" name="advertising">
+                            <span class="ck-toggle__slider"></span>
+                        </label>
+                    </div>
+                </div>
+
+            </div><!-- /.ck-modal__body -->
+
+            <div class="ck-modal__footer">
+                <button id="ck-modal-reject" class="ck-btn ck-btn--outline">Rejeitar</button>
+                <button id="ck-modal-save" class="ck-btn ck-btn--ghost">Salvar Preferências</button>
+                <button id="ck-modal-accept-all" class="ck-btn ck-btn--primary">Aceitar todos</button>
+            </div>
+
+        </div><!-- /.ck-modal__box -->
+    </div><!-- /#ck-modal -->
+
+    <!-- ========== BOTÃO FLUTUANTE DE PREFERÊNCIAS ========== -->
+    <!-- Aparece no canto inferior esquerdo após o banner ser fechado -->
+    <button id="ck-prefs-btn" class="ck-prefs-btn" aria-label="Preferências de cookies">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" />
+            <circle cx="8" cy="9" r="1.5" fill="currentColor" />
+            <circle cx="15" cy="8" r="1.5" fill="currentColor" />
+            <circle cx="15" cy="15" r="1.5" fill="currentColor" />
+        </svg>
+        Cookies
+    </button>
+
+    <!-- ========== SCRIPT ========== -->
+    <script src="cookie-banner.js" defer></script>
+</body>
+
+</html>
