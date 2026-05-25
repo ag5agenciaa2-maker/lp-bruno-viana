@@ -502,6 +502,8 @@
                     <a class="text-text-light dark:text-text-dark hover:text-primary dark:hover:text-primary transition font-medium"
                         href="#areas">Áreas de Atuação</a>
                     <a class="text-text-light dark:text-text-dark hover:text-primary dark:hover:text-primary transition font-medium"
+                        href="#videos">Vídeos</a>
+                    <a class="text-text-light dark:text-text-dark hover:text-primary dark:hover:text-primary transition font-medium"
                         href="#about">Sobre</a>
                     <a class="text-text-light dark:text-text-dark hover:text-primary dark:hover:text-primary transition font-medium"
                         href="#faq">Dúvidas</a>
@@ -521,33 +523,33 @@
                 <div class="md:hidden flex items-center">
                     <button class="text-gray-600 dark:text-gray-300 hover:text-primary focus:outline-none"
                         aria-label="Abrir menu de navegação">
-                        <span class="material-icons text-white text-3xl">menu</span>
+                        <span class="material-icons text-primary dark:text-secondary text-3xl animate-pulse">menu</span>
                     </button>
                 </div>
             </div>
         </div>
     </header>
-    <section class="relative pt-24 pb-16 lg:pt-40 lg:pb-32 bg-hero-pattern bg-cover bg-center bg-no-repeat bg-fixed"
+    <section class="relative pt-28 pb-12 lg:pt-40 lg:pb-32 bg-hero-pattern bg-cover bg-center bg-no-repeat bg-fixed"
         id="home">
         <div class="absolute inset-0 bg-black/60"></div>
         <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center">
             <div class="w-full max-w-4xl mx-auto text-center text-white fade-in-up">
+                <!-- Oculto no desktop/web (md:hidden), visível apenas no mobile de forma otimizada -->
                 <div
-                    class="inline-block px-3 py-1 mb-4 border border-secondary/50 rounded-full bg-black/30 backdrop-blur-sm">
-                    <span class="text-secondary text-sm font-semibold uppercase tracking-wider">Advocacia Especializada
-                        em
-                        Trabalhista Rodoviário</span>
+                    class="inline-block px-3 py-1 mb-4 border border-secondary/50 rounded-full bg-black/30 backdrop-blur-sm md:hidden max-w-full overflow-hidden">
+                    <span class="text-secondary text-[10px] sm:text-xs font-semibold uppercase tracking-wider block truncate">Advocacia Especializada em Trabalhista Rodoviário</span>
                 </div>
-                <h1 class="font-display text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-3">
+                <h1 class="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-3 px-2">
                     Advocacia 100% Rodoviária
                 </h1>
-                <p class="text-secondary italic text-2xl md:text-3xl font-display mb-4">Justiça para quem move o Brasil
+                <p class="text-secondary italic text-xl sm:text-2xl md:text-3xl font-display mb-4">Justiça para quem move o Brasil
                 </p>
-                <p class="text-lg md:text-xl text-gray-200 mb-8 max-w-2xl mx-auto font-light">
+                <p class="text-base sm:text-lg md:text-xl text-gray-200 mb-6 md:mb-8 max-w-2xl mx-auto font-light px-4 leading-relaxed">
                     Defesa técnica de motoristas e cobradores. Atuação em dobra/T.U, descontos indevidos no
-                    contracheque, acúmulo de função e rescisão indireta — com rigor processual e sigilo.
+                    contracheque, acúmulo de função e rescisão indireta, sempre com rigor processual e sigilo.
                 </p>
-                <ul class="space-y-3 mb-10 text-gray-200">
+                <!-- Oculto no mobile (hidden md:block) para evitar sobrecarga de informação e poluição visual -->
+                <ul class="space-y-3 mb-10 text-gray-200 hidden md:block">
                     <li class="flex items-center justify-center gap-3">
                         <span class="material-icons text-secondary">check_circle</span>
                         <span>Dobra de Turno, T.U e Supressão de Intervalo</span>
@@ -561,7 +563,7 @@
                         <span>Acúmulo de Função e Rescisão Indireta</span>
                     </li>
                 </ul>
-                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <div class="flex flex-col sm:flex-row justify-center gap-4 px-4">
                     <a class="bg-secondary text-primary-900 font-bold px-8 py-3.5 rounded hover:bg-yellow-500 transition shadow-lg text-center flex items-center justify-center gap-2"
                         href="https://wa.me/5521982662305?text=Olá,%20vim%20pelo%20site%20e%20gostaria%20de%20falar%20com%20a%20equipe.">
                         <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -650,47 +652,219 @@
                         Indireta e Revisão de Acordo</h3>
                     <p class="text-gray-600 dark:text-gray-400 leading-relaxed">
                         Atuação em pedido de demissão forçado, revisão de acordo trabalhista lesivo e condições
-                        degradantes — como ausência de banheiros nos pontos finais — em busca da reparação devida.
+                        degradantes, como a ausência de banheiros nos pontos finais, em busca da devida reparação.
                     </p>
                 </div>
             </div>
         </div>
     </section>
-    <section class="py-20 bg-white dark:bg-surface-dark relative overflow-hidden" id="about">
+
+    <!-- ================== SEÇÃO DE VÍDEOS EXPLICATIVOS (9:16 VERTICAL) ================== -->
+    <section class="py-20 bg-background-light dark:bg-background-dark relative overflow-hidden border-t border-primary/10" id="videos">
+        <!-- Elemento decorativo de fundo de design assimétrico -->
+        <div class="absolute left-0 top-0 w-64 h-64 bg-primary/5 rounded-full filter blur-3xl" aria-hidden="true"></div>
+        <div class="absolute right-0 bottom-0 w-80 h-80 bg-secondary/5 rounded-full filter blur-3xl" aria-hidden="true"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="mb-16 md:flex md:items-end md:justify-between">
+                <div class="max-w-2xl">
+                    <span class="text-secondary font-semibold uppercase tracking-widest text-xs">Conteúdo Jurídico Exclusivo</span>
+                    <h2 class="font-display text-4xl md:text-5xl font-bold text-primary mt-2 mb-4 leading-tight">
+                        Direito em Foco: Assista aos Vídeos Explicativos
+                    </h2>
+                    <div class="w-20 h-1 bg-secondary mb-4"></div>
+                    <p class="text-gray-600 dark:text-gray-400 font-light">
+                        O Dr. Bruno Vianna explica, de forma clara e descomplicada, as dúvidas mais frequentes dos rodoviários e seus principais direitos garantidos por lei.
+                    </p>
+                </div>
+                <div class="mt-6 md:mt-0">
+                    <a class="bg-primary hover:bg-red-900 text-white font-medium px-6 py-3 rounded shadow transition flex items-center gap-2"
+                        href="https://wa.me/5521982662305?text=Olá,%20vim%20pelo%20site%20e%20gostaria%20de%20orientação%20jurídica.">
+                        <span class="material-icons">chat</span> Tirar Dúvidas no WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <!-- Grid de Vídeos Verticais (Estilo Reels/Shorts) -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                
+                <!-- CARD 1: VÍDEO INSTITUCIONAL (COM DESTAQUE PREMIUM) -->
+                <div class="flex flex-col bg-surface-light dark:bg-surface-dark p-5 rounded-lg border-2 border-secondary shadow-2xl relative max-w-[290px] w-full mx-auto transition duration-300 hover:scale-[1.02]">
+                    <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-secondary text-primary-900 text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-full shadow-md z-20">
+                        Apresentação Principal
+                    </div>
+                    <div class="relative rounded overflow-hidden mb-4 aspect-[9/16] bg-black">
+                        <video controls class="w-full h-full object-cover" preload="metadata" playsinline poster="img/WhatsApp Image 2026-05-14 at 19.24.03 (4).webp">
+                            <source src="https://assets.cdn.filesafe.space/7hzaWcGgawCV1WudlwA7/media/6a1482bb9b6d07a704aca498.mp4" type="video/mp4">
+                            Seu navegador não suporta vídeos.
+                        </video>
+                    </div>
+                    <div class="flex-grow flex flex-col justify-between">
+                        <div>
+                            <span class="text-secondary font-bold text-[10px] uppercase tracking-wider">Apresentação</span>
+                            <h3 class="font-display text-lg font-bold text-text-light dark:text-text-dark mt-1 mb-2">Conheça o Nosso Escritório</h3>
+                            <p class="text-xs text-gray-500 dark:text-gray-400 mb-4 leading-relaxed">
+                                Apresentação do escritório Viana Associados e do nosso compromisso diário em lutar pela categoria.
+                            </p>
+                        </div>
+                        <a href="https://wa.me/5521982662305?text=Olá,%20assisti%20ao%20seu%20vídeo%20institucional%20e%20gostaria%20de%20conhecer%20mais%20sobre%20o%20escritório." target="_blank" class="w-full bg-primary hover:bg-red-900 text-white text-center font-bold py-2.5 px-4 rounded transition flex items-center justify-center gap-1 text-xs mt-2 shadow">
+                            Falar com Dr. Bruno Vianna
+                        </a>
+                    </div>
+                </div>
+
+                <!-- CARD 2: JUSTA CAUSA -->
+                <div class="flex flex-col bg-surface-light dark:bg-surface-dark p-5 rounded-lg border border-primary/5 shadow-xl relative max-w-[290px] w-full mx-auto transition duration-300 hover:scale-[1.02] hover:border-primary/20">
+                    <div class="relative rounded overflow-hidden mb-4 aspect-[9/16] bg-black">
+                        <video controls class="w-full h-full object-cover" preload="metadata" playsinline poster="img/WhatsApp Image 2026-05-14 at 19.24.03 (1).webp">
+                            <source src="https://assets.cdn.filesafe.space/7hzaWcGgawCV1WudlwA7/media/6a1482bb3c3aed7c63c03558.mp4" type="video/mp4">
+                            Seu navegador não suporta vídeos.
+                        </video>
+                    </div>
+                    <div class="flex-grow flex flex-col justify-between">
+                        <div>
+                            <span class="text-primary dark:text-secondary font-bold text-[10px] uppercase tracking-wider">Reversão</span>
+                            <h3 class="font-display text-lg font-bold text-text-light dark:text-text-dark mt-1 mb-2">Entenda a Reversão de Justa Causa</h3>
+                            <p class="text-xs text-gray-500 dark:text-gray-400 mb-4 leading-relaxed">
+                                Saiba quando a justa causa aplicada pela empresa é indevida e como reverter a punição na Justiça do Trabalho.
+                            </p>
+                        </div>
+                        <a href="https://wa.me/5521982662305?text=Olá,%20assisti%20ao%20seu%20vídeo%20sobre%20Justa%20Causa%20e%20gostaria%20de%20tirar%20dúvidas." target="_blank" class="w-full bg-transparent border-2 border-primary hover:bg-primary hover:text-white dark:border-secondary dark:text-secondary dark:hover:bg-secondary dark:hover:text-primary-900 text-primary text-center font-bold py-2 px-4 rounded transition flex items-center justify-center gap-1 text-xs mt-2">
+                            Analisar minha Justa Causa
+                        </a>
+                    </div>
+                </div>
+
+                <!-- CARD 3: DIREITOS NO PROCESSO -->
+                <div class="flex flex-col bg-surface-light dark:bg-surface-dark p-5 rounded-lg border border-primary/5 shadow-xl relative max-w-[290px] w-full mx-auto transition duration-300 hover:scale-[1.02] hover:border-primary/20">
+                    <div class="relative rounded overflow-hidden mb-4 aspect-[9/16] bg-black">
+                        <video controls class="w-full h-full object-cover" preload="metadata" playsinline poster="img/WhatsApp Image 2026-05-14 at 19.24.03 (6).webp">
+                            <source src="https://assets.cdn.filesafe.space/7hzaWcGgawCV1WudlwA7/media/6a1482bb069d64aa5d31a588.mp4" type="video/mp4">
+                            Seu navegador não suporta vídeos.
+                        </video>
+                    </div>
+                    <div class="flex-grow flex flex-col justify-between">
+                        <div>
+                            <span class="text-primary dark:text-secondary font-bold text-[10px] uppercase tracking-wider">Direto ao Ponto</span>
+                            <h3 class="font-display text-lg font-bold text-text-light dark:text-text-dark mt-1 mb-2">O que Cobramos no Processo?</h3>
+                            <p class="text-xs text-gray-500 dark:text-gray-400 mb-4 leading-relaxed">
+                                Uma explicação detalhada diretamente para o rodoviário sobre quais verbas e direitos são cobrados na ação judicial.
+                            </p>
+                        </div>
+                        <a href="https://wa.me/5521982662305?text=Olá,%20assisti%20ao%20seu%20vídeo%20sobre%20o%20que%20cobrar%20no%20processo%20e%20gostaria%20de%20uma%20análise." target="_blank" class="w-full bg-transparent border-2 border-primary hover:bg-primary hover:text-white dark:border-secondary dark:text-secondary dark:hover:bg-secondary dark:hover:text-primary-900 text-primary text-center font-bold py-2 px-4 rounded transition flex items-center justify-center gap-1 text-xs mt-2">
+                            Saber o que posso cobrar
+                        </a>
+                    </div>
+                </div>
+
+                <!-- CARD 4: RESCISÃO INDIRETA -->
+                <div class="flex flex-col bg-surface-light dark:bg-surface-dark p-5 rounded-lg border border-primary/5 shadow-xl relative max-w-[290px] w-full mx-auto transition duration-300 hover:scale-[1.02] hover:border-primary/20">
+                    <div class="relative rounded overflow-hidden mb-4 aspect-[9/16] bg-black">
+                        <video controls class="w-full h-full object-cover" preload="metadata" playsinline poster="img/WhatsApp Image 2026-05-14 at 19.24.03 (5).webp">
+                            <source src="https://assets.cdn.filesafe.space/7hzaWcGgawCV1WudlwA7/media/6a1482bba0bd00c015f31ddb.mp4" type="video/mp4">
+                            Seu navegador não suporta vídeos.
+                        </video>
+                    </div>
+                    <div class="flex-grow flex flex-col justify-between">
+                        <div>
+                            <span class="text-primary dark:text-secondary font-bold text-[10px] uppercase tracking-wider">Direito e CLT</span>
+                            <h3 class="font-display text-lg font-bold text-text-light dark:text-text-dark mt-1 mb-2">Rescisão Indireta na Prática</h3>
+                            <p class="text-xs text-gray-500 dark:text-gray-400 mb-4 leading-relaxed">
+                                Descubra como sair do emprego garantindo todas as suas verbas rescisórias quando o empregador comete faltas graves.
+                            </p>
+                        </div>
+                        <a href="https://wa.me/5521982662305?text=Olá,%20assisti%20ao%20seu%20vídeo%20sobre%20Rescisão%20Indireta%20e%20gostaria%20de%20orientação." target="_blank" class="w-full bg-transparent border-2 border-primary hover:bg-primary hover:text-white dark:border-secondary dark:text-secondary dark:hover:bg-secondary dark:hover:text-primary-900 text-primary text-center font-bold py-2 px-4 rounded transition flex items-center justify-center gap-1 text-xs mt-2">
+                            Entrar com Rescisão Indireta
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            
+        </div>
+    </section>
+
+    <section class="py-20 bg-white dark:bg-surface-dark relative overflow-hidden border-t border-primary/10" id="about">
         <div class="absolute right-0 top-0 w-1/3 h-full bg-gray-50 dark:bg-black/20 skew-x-12 hidden lg:block"></div>
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div class="grid lg:grid-cols-2 gap-12 items-center">
-                <div>
-                    <h2 class="font-display text-3xl md:text-4xl font-bold text-primary mb-6">Sobre o Escritório</h2>
-                    <p class="text-lg text-gray-700 dark:text-gray-300 mb-6 font-medium">
-                        Escritório dedicado a quem vive da rua. O Viana Advogado &amp; Associados atua exclusivamente
-                        em causas de motoristas e cobradores rodoviários.
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <!-- Coluna de Texto -->
+                <div class="order-2 lg:order-1">
+                    <span class="text-secondary font-semibold uppercase tracking-widest text-xs">Perfil Profissional</span>
+                    <h2 class="font-display text-4xl md:text-5xl font-bold text-primary mt-2 mb-6">Dr. Bruno Vianna</h2>
+                    <div class="w-20 h-1 bg-secondary mb-6"></div>
+                    
+                    <p class="text-lg text-gray-700 dark:text-gray-300 mb-6 font-medium leading-relaxed">
+                        Defensor incansável da classe trabalhadora rodoviária. O Dr. Bruno Vianna lidera uma advocacia altamente especializada e focada na proteção dos direitos de motoristas e cobradores de ônibus.
                     </p>
+                    
                     <p class="text-gray-600 dark:text-gray-400 mb-6 leading-relaxed">
-                        Conhecemos a rotina de garagem, ponto final e tabela. Aplicamos a CLT e a <span
-                            class="text-primary font-semibold">Lei do Motorista</span> (Lei 13.103/2015) a casos de
-                        dobra/T.U, descontos indevidos no contracheque, acúmulo de função e rescisão indireta —
-                        sempre em conformidade com o Código de Ética da OAB.
+                        Com ampla vivência prática e domínio das peculiaridades do cotidiano rodoviário, desde a pressão nas garagens até o controle de guias e dupla função, ele aplica a CLT e a <span class="text-primary font-semibold">Lei do Motorista</span> (Lei 13.103/2015) com extremo rigor processual e de forma estritamente transparente.
                     </p>
-                    <div class="grid grid-cols-2 gap-6 mt-8">
+                    
+                    <p class="text-gray-600 dark:text-gray-400 mb-8 leading-relaxed">
+                        O escritório atua de ponta a ponta no Rio de Janeiro, combatendo descontos indevidos no contracheque, cobrando horas extras decorrentes de dobra e tabela única (T.U) e revertendo pedidos de demissão forçados através da rescisão indireta do contrato de trabalho.
+                    </p>
+
+                    <div class="grid grid-cols-2 gap-6 pt-6 border-t border-gray-100 dark:border-gray-800">
                         <div class="flex flex-col border-l-2 border-secondary pl-4">
                             <span class="text-3xl font-bold text-primary font-display">Disciplina</span>
-                            <span class="text-sm text-gray-500 dark:text-gray-400">Rigor técnico em cada processo</span>
+                            <span class="text-xs text-gray-500 dark:text-gray-400">Atuação minuciosa e focada em provas</span>
                         </div>
                         <div class="flex flex-col border-l-2 border-secondary pl-4">
                             <span class="text-3xl font-bold text-primary font-display">Ética</span>
-                            <span class="text-sm text-gray-500 dark:text-gray-400">Transparência total com o
-                                cliente</span>
+                            <span class="text-xs text-gray-500 dark:text-gray-400">Transparência total em cada etapa do processo</span>
                         </div>
                     </div>
                 </div>
-                <div class="relative">
-                    <img alt="Estátua da Justiça em ambiente de escritório de advocacia"
-                        class="rounded shadow-2xl w-full object-cover h-[500px]" width="600" height="500" loading="lazy"
-                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEHmzh9gKXf06Iogj_Wgojnscxhm6tyEMQsTeRoueFm2VjwmYia6VrptaDJZUXYqR0BRt8LcAgjTXpD5Th9grK01cohB1IhTVPfw7ISErieRwXA5IoBl20uIXnnYK8JvZWtN4Sm3cqi4Q4UlIsMwPbOEjUIlupSblikxhOChsMd4fAeSZpVbh-6IIq4NSqZ_dzz7D5atHd5uQMF0ZAfYxh2H4vEs0m1TDyieGKOMKoTRFcDzha7x2Cw-NOvF8cS_B609pkXSt8Yqs" />
-                    <div class="absolute -bottom-6 -left-6 bg-primary p-6 rounded shadow-xl hidden md:block">
-                        <p class="text-secondary font-display text-4xl font-bold">5</p>
-                        <p class="text-white text-sm uppercase tracking-wide">Anos de<br />Experiência</p>
+
+                <!-- Coluna de Imagem Assimétrica Premium com Galeria Interativa -->
+                <div class="order-1 lg:order-2 relative py-8 max-w-[500px] mx-auto w-full">
+                    <!-- Elemento decorativo de fundo -->
+                    <div class="absolute -top-4 -right-4 w-full h-[480px] border-2 border-secondary/20 rounded-lg hidden md:block" aria-hidden="true"></div>
+                    
+                    <!-- Moldura principal da foto (Exibição Superior) -->
+                    <div class="relative z-20 shadow-2xl rounded overflow-hidden border border-gray-200 dark:border-gray-800 bg-gray-100 dark:bg-surface-dark">
+                        <img id="main-about-img" alt="Dr. Bruno Vianna em seu escritório de advocacia"
+                            class="w-full object-cover object-top h-[480px] transition-all duration-300 opacity-100" width="600" height="480" loading="lazy"
+                            src="img/WhatsApp Image 2026-05-14 at 19.24.03 (5).webp" />
+                    </div>
+
+                    <!-- Miniaturas da Galeria (Exibição Inferior) -->
+                    <div class="grid grid-cols-4 gap-3 mt-4 relative z-20">
+                        <!-- Miniatura 1 (Ativa por padrão) -->
+                        <button onclick="changeAboutImage('img/WhatsApp Image 2026-05-14 at 19.24.03 (5).webp', 'Dr. Bruno Vianna em seu escritório de advocacia', this)"
+                            class="about-thumb border-2 border-secondary rounded overflow-hidden shadow-md focus:outline-none transition-all duration-200 hover:scale-105 aspect-[4/3] bg-gray-100 dark:bg-surface-dark"
+                            aria-label="Visualizar foto 1 de Dr. Bruno no escritório">
+                            <img class="w-full h-full object-cover object-top" src="img/WhatsApp Image 2026-05-14 at 19.24.03 (5).webp" alt="Thumbnail 1" loading="lazy">
+                        </button>
+                        
+                        <!-- Miniatura 2 -->
+                        <button onclick="changeAboutImage('img/WhatsApp Image 2026-05-14 at 19.24.03 (1).webp', 'Dr. Bruno Vianna analisando processos trabalhistas', this)"
+                            class="about-thumb border-2 border-transparent rounded overflow-hidden shadow-md focus:outline-none transition-all duration-200 hover:scale-105 aspect-[4/3] bg-gray-100 dark:bg-surface-dark"
+                            aria-label="Visualizar foto 2 de Dr. Bruno analisando processos">
+                            <img class="w-full h-full object-cover object-top" src="img/WhatsApp Image 2026-05-14 at 19.24.03 (1).webp" alt="Thumbnail 2" loading="lazy">
+                        </button>
+
+                        <!-- Miniatura 3 -->
+                        <button onclick="changeAboutImage('img/WhatsApp Image 2026-05-14 at 19.24.03 (4).webp', 'Dr. Bruno Vianna em atendimento no escritório', this)"
+                            class="about-thumb border-2 border-transparent rounded overflow-hidden shadow-md focus:outline-none transition-all duration-200 hover:scale-105 aspect-[4/3] bg-gray-100 dark:bg-surface-dark"
+                            aria-label="Visualizar foto 3 de Dr. Bruno em atendimento">
+                            <img class="w-full h-full object-cover object-top" src="img/WhatsApp Image 2026-05-14 at 19.24.03 (4).webp" alt="Thumbnail 3" loading="lazy">
+                        </button>
+
+                        <!-- Miniatura 4 -->
+                        <button onclick="changeAboutImage('img/WhatsApp Image 2026-05-14 at 19.24.03 (6).webp', 'Dr. Bruno Vianna e o compromisso com o rodoviário', this)"
+                            class="about-thumb border-2 border-transparent rounded overflow-hidden shadow-md focus:outline-none transition-all duration-200 hover:scale-105 aspect-[4/3] bg-gray-100 dark:bg-surface-dark"
+                            aria-label="Visualizar foto 4 de Dr. Bruno focado">
+                            <img class="w-full h-full object-cover object-top" src="img/WhatsApp Image 2026-05-14 at 19.24.03 (6).webp" alt="Thumbnail 4" loading="lazy">
+                        </button>
+                    </div>
+
+                    <!-- Caixa de Experiência flutuante -->
+                    <div class="absolute -bottom-6 -right-6 bg-primary p-5 rounded shadow-2xl z-30 transition duration-300 hover:translate-y-[-2px] hidden sm:block">
+                        <p class="text-secondary font-display text-4xl font-bold leading-none">5</p>
+                        <p class="text-white text-xs uppercase tracking-wider font-semibold mt-1">Anos de<br />Combate Ativo</p>
                     </div>
                 </div>
             </div>
@@ -746,7 +920,7 @@
             <div class="text-center mb-16">
                 <h2 class="font-display text-3xl md:text-4xl font-bold text-primary mb-4">Dúvidas do Rodoviário</h2>
                 <p class="text-gray-600 dark:text-gray-400">Esclarecimentos sobre descontos indevidos, dobra/T.U,
-                    acúmulo de função e rescisão indireta — orientação geral, sem promessa de resultado.
+                    acúmulo de função e rescisão indireta. Apresentamos uma orientação geral, sem qualquer promessa de resultado.
                 </p>
             </div>
             <div class="space-y-4">
@@ -793,8 +967,8 @@
                     </summary>
                     <div
                         class="text-gray-600 dark:text-gray-400 mt-0 px-6 pb-6 leading-relaxed border-t border-gray-100 dark:border-gray-700 pt-4">
-                        Quando o rodoviário exerce, de forma habitual, atribuições estranhas ao cargo registrado —
-                        como motorista que também atua como cobrador, ou fiscal que trabalha como despachante —
+                        Quando o rodoviário exerce, de forma habitual, atribuições estranhas ao cargo registrado,
+                        como no caso do motorista que também atua como cobrador ou do fiscal que trabalha como despachante,
                         é possível pleitear o adicional por acúmulo ou desvio de função, com reflexos nas demais
                         verbas salariais.
                     </div>
@@ -856,8 +1030,8 @@
                     </summary>
                     <div
                         class="text-gray-600 dark:text-gray-400 mt-0 px-6 pb-6 leading-relaxed border-t border-gray-100 dark:border-gray-700 pt-4">
-                        O período em que o rodoviário está à disposição do empregador — incluindo abertura e
-                        fechamento de guia, conferência de veículo e troca de turno — em regra integra a jornada
+                        O período em que o rodoviário está à disposição do empregador, incluindo a abertura e o
+                        fechamento de guia, a conferência do veículo e a troca de turno, em regra integra a jornada
                         de trabalho e deve ser remunerado, podendo gerar horas extras quando não computado.
                     </div>
                 </details>
@@ -1017,7 +1191,8 @@
                 <div class="footer-links">
                     <a href="#home">Início</a>
                     <a href="#areas">Áreas de Atuação</a>
-                    <a href="#about">Sobre o Escritório</a>
+                    <a href="#videos">Vídeos Explicativos</a>
+                    <a href="#about">Sobre o Advogado</a>
                     <a href="#faq">Dúvidas Frequentes</a>
                     <a href="#contact">Agendar Consulta</a>
                 </div>
@@ -1212,6 +1387,32 @@
                 });
             }
         });
+
+        // Função para Galeria Interativa do Dr. Bruno Vianna
+        function changeAboutImage(src, alt, thumbElement) {
+            const mainImg = document.getElementById('main-about-img');
+            if (!mainImg) return;
+            
+            // Efeito fade out suave
+            mainImg.classList.add('opacity-0');
+            
+            setTimeout(() => {
+                mainImg.src = src;
+                mainImg.alt = alt;
+                // Efeito fade in suave
+                mainImg.classList.remove('opacity-0');
+            }, 200);
+            
+            // Remover as bordas douradas ativas de todas as miniaturas
+            document.querySelectorAll('.about-thumb').forEach(thumb => {
+                thumb.classList.remove('border-secondary');
+                thumb.classList.add('border-transparent');
+            });
+            
+            // Adicionar a borda dourada ativa na miniatura selecionada
+            thumbElement.classList.remove('border-transparent');
+            thumbElement.classList.add('border-secondary');
+        }
     </script>
 
     <!-- ========== BANNER DE ACEITE ========== -->
